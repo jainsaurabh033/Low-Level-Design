@@ -1,5 +1,6 @@
 package com.LLD.Low_Level_design.Application.ParkingLot.Model;
 
+import com.LLD.Low_Level_design.Application.CarRentalSystem.Enum.VehicleStatus;
 import com.LLD.Low_Level_design.Application.ParkingLot.Enum.VehicleType;
 
 public abstract class Vehicle {

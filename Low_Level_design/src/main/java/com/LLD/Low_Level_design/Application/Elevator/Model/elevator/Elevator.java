@@ -3,6 +3,7 @@ package com.LLD.Low_Level_design.Application.Elevator.Model.elevator;
 import com.LLD.Low_Level_design.Application.Elevator.Model.request.ExternalRequest;
 import com.LLD.Low_Level_design.Application.Elevator.Model.request.InternalRequest;
 
+import java.util.Collections;
 import java.util.TreeSet;
 
 public class Elevator implements Runnable{
@@ -24,7 +25,7 @@ public class Elevator implements Runnable{
         this.door = new Door();
         this.display = new Dispaly();
         this.upRequests = new TreeSet<>();
-        this.downRequests = new TreeSet<>();
+        this.downRequests = new TreeSet<>(Collections.reverseOrder());
     }
 
     public int getId(){
